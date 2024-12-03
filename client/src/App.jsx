@@ -27,7 +27,7 @@ const App = () => {
             return
         }
 
-        axios.get(`https://api-new-murex.vercel.app/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`)
+        axios.get(`/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`)
             .then((response) => {
                 setComplaints(response.data); // Update state with fetched data
                 setLoading(false);
@@ -141,3 +141,61 @@ const App = () => {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/login" element={<Login />} />
+//         <Route path="/register" element={<Register />} />
+//         <Route path="/Profile" element={<Profile />} />
+//         <Route path="/Contact" element={<Contact />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
+
+// const Home = () => {
+//     return <h1>Home</h1>;
+// };
+
+// const Login = () => {
+//     return <h1>Login</h1>;
+// };
+
+// const Register = () => {
+//     return <h1>Register</h1>;
+// };
+
+// const Profile = () => {
+//     return <h1>Profile</h1>;
+// };
+
+// const Contact = () => {
+//     return <h1>Contact</h1>;
+// };
+
+// export default App;
+
+
+
+
+
