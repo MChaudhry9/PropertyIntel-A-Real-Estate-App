@@ -27,7 +27,7 @@ const App = () => {
             return
         }
 
-        axios.get(`/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`)
+        axios.get(`https://api-new-murex.vercel.app/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`)
             .then((response) => {
                 setComplaints(response.data); // Update state with fetched data
                 setLoading(false);
