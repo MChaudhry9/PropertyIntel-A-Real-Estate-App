@@ -45,7 +45,7 @@ const Home = () => {
         <>
             <div className='outer-container'>
                 <CssBaseline />
-                <Header />
+                {/* <Header /> */}
                 <Grid container spacing ={3} style={{width: '100%', marginTop: '1px'}}>
                     <Grid item xs = {12} md={4}>
                         <div style={{marginLeft: '12%', marginTop: '20%'}}>

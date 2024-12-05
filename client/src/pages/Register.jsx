@@ -3,8 +3,10 @@ import './Register.css'
 
 const Register = () => {
   return (
-    <div className="register-container">
-      <h2>Register</h2>
+    <div className="full-screen-container">
+      <div className="inside-container">
+        <h2 className="register-cont">Register</h2>
+      </div>
     </div>
   )
 }

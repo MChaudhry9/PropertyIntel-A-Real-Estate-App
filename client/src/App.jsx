@@ -4,6 +4,7 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import Navbar from './components/navbar/Navbar';
 import './App.css'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -11,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

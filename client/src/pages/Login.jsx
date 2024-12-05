@@ -1,11 +1,9 @@
 import React, {useState} from "react";
-import './Login.css'
 import { useNavigate } from "react-router-dom";
+import './Login.css'
 
 const Login = () => {
-
   const navigate = useNavigate()
-
   const [formData, setFormData] = useState({
     email:'',
     password:''
@@ -30,10 +28,6 @@ const Login = () => {
   }
 
   return (
-    // <>
-    // <div className="nav-container">
-    //   <h1>Nav</h1>
-    // </div>
     <div className="full-screen-container">
       <div className="inside-container">
         <h2 style={{marginTop: '0px'}}>
@@ -53,12 +47,12 @@ const Login = () => {
         <form className="loginForm" onSubmit={() => navigate('/register')}>
           <div className="inputGroup">
             <div className="formGroup">
-              <label htmlFor="username">Email</label>
-              <input type="text" id="email" placeholder='email' name="email" />
+              <label htmlFor="username">Username/Email</label>
+              <input type="text" id="email" placeholder='email' name="Email" />
             </div>
             <div className="formGroup">
               <label htmlFor="password">Password</label>
-              <input type="password" id="password" placeholder='password' name="password" />
+              <input type="password" id="password" placeholder='Password' name="password" />
             </div>
           </div>
           <button type="submit">Log in</button>
@@ -66,9 +60,7 @@ const Login = () => {
         </form>
 
       </div>
-      
     </div>
-    //<>
   )
 }
 

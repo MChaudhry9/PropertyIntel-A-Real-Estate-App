@@ -3,8 +3,10 @@ import './Profile.css'
 
 const Profile = () => {
   return (
-    <div className="profile-container">
-      <h2>Profile</h2>
+    <div className="full-screen-container">
+      <div className="inside-container">
+        <h2 className="profile-cont">Profile</h2>
+      </div>
     </div>
   )
 }
