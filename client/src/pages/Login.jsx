@@ -30,7 +30,6 @@ const Login = () => {
   return (
     <div className="full-screen-container">
       <div className="inside-container">
-        {/* <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/1-5th-avenue-nyc-traffic-melanie-viola.jpg"/> */}
         <h2 style={{marginTop: '0px'}}>
           Login or
           {' '}
@@ -38,18 +37,17 @@ const Login = () => {
               role="button"
               onClick={handleRegisterClick}
               style={{ color: 'purple', cursor: 'pointer', textDecoration: 'underline' }}
-              // onKeyDown={handleRegisterClick}
               tabIndex={0} // Make it focusable
             >
               Register
             </span>
         </h2>
 
-        <form className="loginForm" onSubmit={() => navigate('/register')}>
+        <form className="loginForm" onSubmit={handleSubmit}>
           <div className="inputGroup">
             <div className="formGroup">
               <label htmlFor="username">Username/Email</label>
-              <input type="text" id="email" placeholder='email' name="Email" />
+              <input type="text" id="email" placeholder='Email' name="email" />
             </div>
             <div className="formGroup">
               <label htmlFor="password">Password</label>
