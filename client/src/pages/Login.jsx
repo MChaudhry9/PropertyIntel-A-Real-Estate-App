@@ -30,6 +30,7 @@ const Login = () => {
   return (
     <div className="full-screen-container">
       <div className="inside-container">
+        {/* <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/1-5th-avenue-nyc-traffic-melanie-viola.jpg"/> */}
         <h2 style={{marginTop: '0px'}}>
           Login or
           {' '}

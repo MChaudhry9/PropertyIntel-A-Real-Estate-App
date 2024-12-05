@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #7e57c6;
+    background-color: rgb(145, 59, 195);
     color: white;
     position: fixed;
     top: 0;
@@ -28,6 +28,6 @@
   }
   
   .navbar a:hover {
-    text-decoration: underline;
-    color: white;
+    /* text-decoration: underline; */
+    color: rgb(228, 228, 228);
   }
