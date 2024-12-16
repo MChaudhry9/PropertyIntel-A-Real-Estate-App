@@ -24,20 +24,21 @@ const Login = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     setError('');
-
+  
     // Supabase login
     const { error } = await supabase.auth.signInWithPassword({
       email: formData.email,
       password: formData.password,
     });
-
+  
     if (error) {
       setError(error.message); // Display error message
     } else {
       alert("Login successful!");
-      navigate('/home'); // Navigate to home page after login
+      navigate('/'); // Redirect to the home page after login
     }
   }
+  
 
   // Navigate to Register page
   function handleRegisterClick() {
