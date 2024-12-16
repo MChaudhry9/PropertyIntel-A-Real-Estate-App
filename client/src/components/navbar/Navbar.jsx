@@ -33,18 +33,19 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
+      <Link to="/" className="home-link">Home</Link>
       <Link to="/profile">Profile</Link>
       <Link to="/contact">Contact</Link>
 
       {/* Conditional rendering: Login/Signup or Sign Out */}
       {user ? (
-        <button 
+        <span 
           onClick={handleSignOut} 
-          style={{ background: 'none', border: 'none', color: 'purple', cursor: 'pointer' }}
+          className="navbar-link" /* Added class to match link styling */
+          style={{ cursor: 'pointer' }}
         >
           Sign Out
-        </button>
+        </span>
       ) : (
         <Link to="/login">Login/Signup</Link>
       )}

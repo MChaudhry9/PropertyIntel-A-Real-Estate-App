@@ -1,33 +1,91 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(145, 59, 195);
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 1000;
-  }
-  
-  .navbar {
-    position: fixed; /* or absolute */
-    left: 0;
-    top: 0;
-    width: 100vw; /* Use viewport width */
-    height: 10vh;
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-  }
-  
-  
-  .navbar a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar {
+  position: fixed; /* or absolute */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Use viewport width */
+  height: 10vh;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.navbar a {
+  position: relative;
+  justify-content: space-evenly;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  /* text-decoration: underline; */
+  color: rgb(228, 228, 228);
+}
+
+.navbar a:not(.home-link)::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
+.navbar a.home-link {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Added: Sign Out link styling */
+.navbar a,
+.navbar .navbar-link { /* Target both links and the Sign Out span */
     color: white;
     text-decoration: none;
     font-size: 20px;
-  }
-  
-  .navbar a:hover {
-    /* text-decoration: underline; */
+    font-weight: 500;
+    margin-left: 20px;
+    display: inline-block; /* Ensure single-line display */
+    cursor: pointer; /* Make the span look clickable */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.navbar a:hover,
+.navbar .navbar-link:hover {
     color: rgb(228, 228, 228);
-  }
+}
+.navbar .navbar-link {
+  position: relative; /* Ensure relative positioning for the pseudo-element */
+  display: inline-block; /* Keep the width inline with the text */
+}
+
+.navbar .navbar-link::before {
+  content: '';
+  position: absolute;
+  width: 100%; /* Match the width of the text */
+  height: 2px;
+  background: white;
+  left: 0;
+  transform: scaleX(1); /* Keep the line proportional */
+  transition: transform 0.3s ease; /* Optional smooth transition */
+}
