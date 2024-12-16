@@ -40,8 +40,14 @@
   content: '';
   position: absolute;
   width: 100%;
+  left: 0;
   height: 2px;
   background: white;
+  transition: .3s;
+}
+
+.navbar a:not(.home-link)::before{
+  width: 100%;
 }
 
 .navbar a.home-link {

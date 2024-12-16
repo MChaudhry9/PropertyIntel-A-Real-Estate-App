@@ -21,8 +21,9 @@ body {
     min-height: 90vh;
     /* height: 89vh; */
     width: 100vw;
-    background-color: #ffffff;
-    /* background-image: "https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/1-5th-avenue-nyc-traffic-melanie-viola.jpg"; */
+    background: url('./assets/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
