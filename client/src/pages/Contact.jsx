@@ -2,6 +2,8 @@ import React from "react";
 import './Contact.css'
 
 const Contact = () => {
+  const googleFormLink = 'https://docs.google.com/forms/d/e/1FAIpQLSfGkJ_2H0Zfc88e6R5_krMaySGMFQGuMiguSlQZSZOEs0Owow/viewform?usp=sharing'
+
   return (
     <div className="full-screen-container">
       <div className="inside-container" style={{alignItems: 'center'}}>
@@ -15,9 +17,11 @@ const Contact = () => {
           <h2 className="header-text" style={{marginTop: '30px'}}>Team Contact</h2>
           <h3 className="inner-text">ccnyrealestate@gmail.com</h3>          
         </div>
-        {/* <form className="loginForm" style={{marginTop: '10px'}}> */}
-          <button style={{marginTop: '40px'}} className="feedback-btn">Feedback Form</button>
-        {/* </form> */}
+        <a href={googleFormLink} target="_blank" rel="noopener noreferrer">
+          <button className="feedback-btn">
+            Feedback Form
+          </button>
+        </a>
       </div>
     </div>
   )
