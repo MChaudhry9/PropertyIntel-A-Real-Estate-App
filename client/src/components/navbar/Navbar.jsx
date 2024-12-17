@@ -36,6 +36,25 @@ const Navbar = () => {
       <Link to="/" className="home-link">Home</Link>
       {user && <Link to="/profile">Profile</Link>}
       <Link to="/contact">Contact</Link>
+      {/* Link to complaint codes file */}
+      <a 
+        href="/complaint_codes.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="navbar-link"
+      >
+        Complaint Codes
+      </a>
+
+      {/* Link to disposition codes file */}
+      <a 
+        href="/disposition_codes.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="navbar-link"
+      >
+        Disposition Codes 
+      </a>
 
       {/* Conditional rendering: Login/Signup or Sign Out */}
       {user ? (
