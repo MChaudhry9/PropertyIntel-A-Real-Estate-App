@@ -1,74 +1,134 @@
+/* General Body Styling */
 body {
   margin: 0;
   padding: 0;
-  background: rgb(0, 0, 0); /* Fallback solid color */
-  background-image: url('../assets/background.jpg');
-  background-size: cover; /* Ensures the image covers the entire viewport */
-  background-position: center; /* Center the image */
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  font-family: Arial, sans-serif; /* Optional: Clean font */
+  background: rgb(240, 240, 240); /* Fallback color */
+  background-image: url('../assets/background.jpg'); /* Ensure path is correct */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
+
+/* Outer Container */
 .outer-container {
-  margin-top: 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: rgba(180, 181, 243, 0.85); /* Slightly transparent white */
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Form Container Styling */
 .form-container {
-    border: 2px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    max-width: 500px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form label {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  form input {
-    margin-bottom: 15px;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  form button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #45a049;
-  }
+  border: 1px solid #d2bcee;
+  padding: 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
 
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+}
 
-  .table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    /* margin-bottom: 50px; */
-    flex-direction: column;
-    background-color: rgb(224, 224, 224);
-  }
+form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+}
 
-  h1 {
-    color: rgb(42, 71, 240);
-  }
+form input {
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
 
-  .outer-container {
-    background-color: rgb(224, 224, 224);
-    /* height: 900px; */
-  }
+form input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #050044, #070047);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #45a049, #388e3c);
+  transform: scale(1.05);
+}
+
+/* Title Styling */
+h1 {
+  color: #2a47f0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Table Container */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}

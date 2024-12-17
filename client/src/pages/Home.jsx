@@ -45,43 +45,42 @@ const Home = () => {
             <CssBaseline />
             <Grid container spacing={3} style={{ width: '100%', marginTop: '1px' }}>
                 {/* Form Section */}
-                <Grid item xs={12} md={4}>
-                    <div style={{ marginLeft: '12%', marginTop: '20%' }}>
-                        <h1 style={{ marginLeft: '15%' }}>Search Complaints</h1>
-                        <div className="form-container">
-                            <form onSubmit={handleSubmit}>
-                                <label htmlFor="address">Address:</label>
-                                <input
-                                    type="text"
-                                    id="address"
-                                    value={address}
-                                    onChange={(e) => setAddress(e.target.value)} // Update address state
-                                    placeholder="Enter Address"
-                                />
+<Grid item xs={12} md={4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div className="form-container" style={{ width: '100%', maxWidth: '400px', margin: '0 auto' }}>
+        <h1 style={{ color: 'black' }}>Search Complaints</h1>
+        <form onSubmit={handleSubmit}>
+            <label htmlFor="address">Address:</label>
+            <input
+                type="text"
+                id="address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)} // Update address state
+                placeholder="Enter Address"
+            />
 
-                                <label htmlFor="zip_code">Zip Code:</label>
-                                <input
-                                    type="text"
-                                    id="zip_code"
-                                    value={zipCode}
-                                    onChange={(e) => setZipCode(e.target.value)} // Update zipCode state
-                                    placeholder="Enter Zip Code"
-                                />
+            <label htmlFor="zip_code">Zip Code:</label>
+            <input
+                type="text"
+                id="zip_code"
+                value={zipCode}
+                onChange={(e) => setZipCode(e.target.value)} // Update zipCode state
+                placeholder="Enter Zip Code"
+            />
 
-                                <label htmlFor="binNumber">BIN Number:</label>
-                                <input
-                                    type="text"
-                                    id="binNumber"
-                                    value={binNumber}
-                                    onChange={(e) => setBinNumber(e.target.value)} // Update binNumber state
-                                    placeholder="Enter BIN Number"
-                                />
+            <label htmlFor="binNumber">BIN Number:</label>
+            <input
+                type="text"
+                id="binNumber"
+                value={binNumber}
+                onChange={(e) => setBinNumber(e.target.value)} // Update binNumber state
+                placeholder="Enter BIN Number"
+            />
 
-                                <button type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </Grid>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</Grid>
+
 
                 {/* Map Section */}
                 <Grid item xs={12} md={8}>
@@ -93,7 +92,7 @@ const Home = () => {
             <div className="table-container">
                 {dataLoaded && (
                     <>
-                        <h1>Complaints List</h1>
+                        <h1 style={{ color: 'black' }}>Complaints List</h1>
                         <table border="1">
                             <thead>
                                 <tr>
