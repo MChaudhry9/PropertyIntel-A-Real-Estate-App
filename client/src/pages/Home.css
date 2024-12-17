@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0); /* Fallback solid color */
+  background-image: url('../assets/background.jpg');
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  font-family: Arial, sans-serif; /* Optional: Clean font */
+}
 .outer-container {
   margin-top: 50px;
 }
