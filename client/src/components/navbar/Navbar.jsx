@@ -67,8 +67,8 @@ const Navbar = () => {
         </span>
       ) : (
         <>
-          <Link to="/login">Login/Register</Link>
-          <Link to="/Home">Try it for Free!</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/register">Try it for Free!</Link>
         </>
       )}
     </nav>

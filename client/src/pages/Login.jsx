@@ -11,6 +11,10 @@ const Login = () => {
   });
   const [error, setError] = useState('');
 
+  const githubImgUrl = 'https://cdn-icons-png.flaticon.com/512/25/25231.png'
+  const linkedInImgUrl = 'https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png'
+  const discordImgUrl = 'https://static.vecteezy.com/system/resources/previews/018/930/500/non_2x/discord-logo-discord-icon-transparent-free-png.png'
+
   // Update form data state
   function handleFormChange(e) {
     const { name, value } = e.target;
@@ -105,9 +109,9 @@ const Login = () => {
         {/* Social Login Buttons */}
         <h3 style={{ marginTop: "20px", color: "black" }}>Or Sign In With:</h3>
         <div className="social-login-buttons">
-          <button className="github" onClick={() => handleSocialLogin("github")}>GitHub</button>
-          <button className="linkedin" onClick={() => handleSocialLogin("linkedin")}>LinkedIn</button>
-          <button className="discord" onClick={() => handleSocialLogin("discord")}>Discord</button>
+          <button onClick={() => handleSocialLogin("github")}><img src={githubImgUrl} style={{width: '40px'}} /></button>
+          <button onClick={() => handleSocialLogin("linkedin")}><img src={linkedInImgUrl} style={{width: '70px'}}/></button>
+          <button onClick={() => handleSocialLogin("discord")}><img src={discordImgUrl} style={{width: '70px'}}/></button>
         </div>
       </div>
     </div>

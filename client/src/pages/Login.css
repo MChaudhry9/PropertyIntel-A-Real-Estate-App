@@ -88,6 +88,10 @@ input[type="email"]:focus {
   background-color: #5a189a; /* Darker purple on hover */
 }
 
+.social-login-buttons img {
+  width: 50px;
+}
+
 /* Social Login Buttons Container */
 .social-login-buttons {
   display: flex; /* Align buttons in a row */
@@ -111,29 +115,4 @@ input[type="email"]:focus {
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-/* Individual Button Colors */
-.social-login-buttons button.github {
-  background-color: #333333; /* GitHub black */
-  color: white;
-  border: none;
-  width: 60px;
-  height: 60px;
-  border-radius: 12px; /* Rounded corners */
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.social-login-buttons button.github:hover {
-  background-color: #242424;
-}
-
-.social-login-buttons button.linkedin {
-  background-color: #0077b5; /* LinkedIn Blue */
-}
-
-.social-login-buttons button.linkedin:hover {
-  background-color: #005582;
 }
