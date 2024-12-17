@@ -67,7 +67,7 @@ const Navbar = () => {
         </span>
       ) : (
         <>
-          <Link to="/login">Login</Link>
+          <Link to="/login">Login/Register</Link>
           <Link to="/">Try it for Free!</Link>
         </>
       )}
