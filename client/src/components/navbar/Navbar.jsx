@@ -69,7 +69,7 @@ const Navbar = () => {
       ) : (
         <>
           <Link to="/login">Login</Link>
-          <Link to="/register">Try it for Free!</Link>
+          <Link to="/home">Try it for Free!</Link>
         </>
       )}
     </nav>
