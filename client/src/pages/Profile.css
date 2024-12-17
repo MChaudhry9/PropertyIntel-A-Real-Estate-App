@@ -1,3 +1,50 @@
-.profile-cont {
-  color: green
+.profile-container {
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  /* background-color: red; */
+  /* align-items: center; */
+}
+
+.profile-container-info {
+  /* background-color: pink; */
+  /* padding: 5px; */
+}
+
+.profile-container-qr {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.profile-container-info h2{
+  margin-top: 30px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-container-qr {
+  /* background-color: pink; */
+}
+
+.profile-container-qr h2{
+  margin-top: 15px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.feedback-btn {
+  margin-top: 30px;
+  width: 200px;
+  padding: 10px;
+  background-color: rgb(145, 59, 195);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  border: 2px solid rgb(145, 59, 195);
 }

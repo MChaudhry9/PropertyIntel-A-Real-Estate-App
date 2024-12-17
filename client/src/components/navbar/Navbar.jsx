@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="home-link">Home</Link>
-      <Link to="/profile">Profile</Link>
+      {user && <Link to="/profile">Profile</Link>}
       <Link to="/contact">Contact</Link>
 
       {/* Conditional rendering: Login/Signup or Sign Out */}
@@ -47,7 +47,10 @@ const Navbar = () => {
           Sign Out
         </span>
       ) : (
-        <Link to="/login">Login/Signup</Link>
+        <>
+          <Link to="/login">Login</Link>
+          <Link to="/register">Try it for Free!</Link>
+        </>
       )}
     </nav>
   );

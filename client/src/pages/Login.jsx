@@ -34,7 +34,6 @@ const Login = () => {
     if (error) {
       setError(error.message); // Display error message
     } else {
-      alert("Login successful!");
       navigate('/'); // Redirect to the home page after login
     }
   }

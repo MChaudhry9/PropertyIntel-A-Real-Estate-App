@@ -16,7 +16,7 @@ const Contact = () => {
           <h3 className="inner-text">ccnyrealestate@gmail.com</h3>          
         </div>
         {/* <form className="loginForm" style={{marginTop: '10px'}}> */}
-          <button className="feedback-btn">Feedback Form</button>
+          <button style={{marginTop: '40px'}} className="feedback-btn">Feedback Form</button>
         {/* </form> */}
       </div>
     </div>
