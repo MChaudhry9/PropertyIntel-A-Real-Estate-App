@@ -1,64 +1,107 @@
-  .loginForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: purple; */
-  }
+/* Full-Screen Container */
+.full-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9; /* Soft, neutral background */
+}
 
-  .inputGroup {
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
-  }
+/* Main Inside Container */
+.inside-container {
+  background: linear-gradient(135deg, #ffffff, #e6e6e6); /* Light gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
 
-  .formGroup {
-    width: 35vw;
-    /* background-color: green; */
-  }
+/* Form Styling */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  label {
-    margin-bottom: 5px;
-    margin-left: 7px;
-    display: block;
-    color: #000000;
-  }
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between form groups */
+}
 
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid;
-    border-radius: 20px;
-    box-sizing: border-box; 
-    background-color: rgb(255, 255, 255);
-  }
+.formGroup {
+  width: 100%;
+}
 
-  .loginForm button {
-    margin-top: 30px;
-    width: 200px;
-    background-color: rgb(145, 59, 195);
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-  }
+/* Label Styling */
+label {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: block;
+  font-weight: 600;
+  color: #444;
+  font-size: 14px;
+}
 
-
-
-
-  .nav-container {
-    height: 8vh;
-    background-color: #00D4EC;
-  }
-
-  /* Ensure email input matches other input styles */
+/* Input Styling */
 input[type="text"],
 input[type="password"],
 input[type="email"] {
   width: 100%;
-  padding: 10px;
-  border: 2px solid;
-  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
   box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  color: #333;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
 }
 
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #7b2cbf; /* Purple accent color */
+  box-shadow: 0 0 8px rgba(123, 44, 191, 0.3);
+}
+
+/* Button Styling */
+.loginForm button {
+  margin-top: 20px;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #7b2cbf; /* Primary purple */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginForm button:hover {
+  background-color: #5a189a; /* Darker purple on hover */
+}
+
+/* Navigation Container */
+.nav-container {
+  height: 8vh;
+  background-color: #7b2cbf; /* Matching purple for nav bar */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

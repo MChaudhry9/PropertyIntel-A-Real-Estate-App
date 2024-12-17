@@ -46,14 +46,14 @@ const Login = () => {
 
   return (
     <div className="full-screen-container">
-      <div className="inside-container" style={{alignItems: 'center'}}>
-        <h2 style={{ marginTop: '0px' }}>
+      <div className="inside-container" style={{ color: 'white', alignItems: 'center'}}>
+        <h2 style={{ color: 'Black', marginTop: '0px' }}>
           Login or
           {' '}
           <span
             role="button"
             onClick={handleRegisterClick}
-            style={{ color: 'purple', cursor: 'pointer', textDecoration: 'underline' }}
+            style={{ color: 'Purple', cursor: 'pointer', textDecoration: 'underline' }}
             tabIndex={0} // Make it focusable
           >
             Register
