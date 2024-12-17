@@ -1,3 +1,31 @@
-.contact-cont {
-  color: rgb(206, 7, 7);
+.contact-container {
+  width: 35vw;
+}
+
+.contact-container h3 {
+  margin-top: 2px;
+}
+
+.header-text {
+  font-size: 25x;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.inner-text {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.feedback-btn {
+  margin-top: 30px;
+  width: 200px;
+  padding: 10px;
+  background-color: rgb(145, 59, 195);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  border: 2px solid rgb(145, 59, 195);
 }

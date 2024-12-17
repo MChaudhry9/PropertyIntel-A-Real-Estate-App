@@ -52,7 +52,7 @@ const Register = () => {
 
   return (
     <div className="full-screen-container">
-      <div className="inside-container">
+      <div className="inside-container" style={{alignItems: 'center'}}>
         <h2 style={{ marginTop: '0px' }}>
           <span
             role="button"

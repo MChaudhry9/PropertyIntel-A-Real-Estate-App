@@ -47,7 +47,7 @@ const Login = () => {
 
   return (
     <div className="full-screen-container">
-      <div className="inside-container">
+      <div className="inside-container" style={{alignItems: 'center'}}>
         <h2 style={{ marginTop: '0px' }}>
           Login or
           {' '}
@@ -91,7 +91,6 @@ const Login = () => {
           </div>
           <button type="submit">Log in</button>
           {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
-          <h2>Or Sign in with:</h2>
         </form>
       </div>
     </div>
