@@ -67,7 +67,7 @@ const Login = () => {
           <span
             role="button"
             onClick={handleRegisterClick}
-            style={{ color: 'Purple', cursor: 'pointer', textDecoration: 'underline' }}
+            style={{ color: 'blue', cursor: 'pointer', textDecoration: 'underline' }}
             tabIndex={0} // Make it focusable
           >
             Register
