@@ -1,3 +1,6 @@
+.outer-container {
+  margin-top: 50px;
+}
 .form-container {
     border: 2px solid #ddd;
     padding: 20px;
