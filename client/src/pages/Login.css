@@ -88,20 +88,52 @@ input[type="email"]:focus {
   background-color: #5a189a; /* Darker purple on hover */
 }
 
-/* Navigation Container */
-.nav-container {
-  height: 8vh;
-  background-color: #7b2cbf; /* Matching purple for nav bar */
+/* Social Login Buttons Container */
+.social-login-buttons {
+  display: flex; /* Align buttons in a row */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px;
 }
 
-/* Fade-In Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Social Login Button Styling */
+.social-login-buttons button {
+  width: 60px; /* Make buttons square */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Adjust font size */
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 12px; /* Slight rounding for squares */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Individual Button Colors */
+.social-login-buttons button.github {
+  background-color: #333333; /* GitHub black */
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px; /* Rounded corners */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-login-buttons button.github:hover {
+  background-color: #242424;
+}
+
+.social-login-buttons button.linkedin {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-login-buttons button.linkedin:hover {
+  background-color: #005582;
 }

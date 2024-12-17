@@ -24,29 +24,39 @@ const Login = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     setError('');
-  
+
     // Supabase login
     const { error } = await supabase.auth.signInWithPassword({
       email: formData.email,
       password: formData.password,
     });
-  
+
     if (error) {
       setError(error.message); // Display error message
     } else {
       navigate('/'); // Redirect to the home page after login
     }
   }
-  
 
   // Navigate to Register page
   function handleRegisterClick() {
     navigate('/register');
   }
 
+  // Social Login Functionality
+  const handleSocialLogin = async (provider) => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider,
+    });
+
+    if (error) {
+      setError(error.message); // Display error message
+    }
+  };
+
   return (
     <div className="full-screen-container">
-      <div className="inside-container" style={{ color: 'white', alignItems: 'center'}}>
+      <div className="inside-container" style={{ color: 'white', alignItems: 'center' }}>
         <h2 style={{ color: 'Black', marginTop: '0px' }}>
           Login or
           {' '}
@@ -91,10 +101,17 @@ const Login = () => {
           <button type="submit">Log in</button>
           {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
         </form>
+
+        {/* Social Login Buttons */}
+        <h3 style={{ marginTop: "20px", color: "black" }}>Or Sign In With:</h3>
+        <div className="social-login-buttons">
+          <button className="github" onClick={() => handleSocialLogin("github")}>GitHub</button>
+          <button className="linkedin" onClick={() => handleSocialLogin("linkedin")}>LinkedIn</button>
+          <button className="discord" onClick={() => handleSocialLogin("discord")}>Discord</button>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Login;
-

@@ -7,12 +7,10 @@
   margin-top: 30px;
   margin-bottom: 25px;
   /* background-color: red; */
-  /* align-items: center; */
 }
 
 .profile-container-info {
   /* background-color: pink; */
-  /* padding: 5px; */
 }
 
 .profile-container-qr {
@@ -21,17 +19,13 @@
   justify-content: center;
 }
 
-.profile-container-info h2{
+.profile-container-info h2 {
   margin-top: 30px;
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.profile-container-qr {
-  /* background-color: pink; */
-}
-
-.profile-container-qr h2{
+.profile-container-qr h2 {
   margin-top: 15px;
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
@@ -47,4 +41,48 @@
   cursor: pointer;
   display: block;
   border: 2px solid rgb(145, 59, 195);
+}
+.social-login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+.icon-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%; /* Circular buttons */
+  font-size: 24px; /* Icon size */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-btn.github {
+  background-color: #333333; /* GitHub Black */
+}
+
+.icon-btn.github:hover {
+  background-color: #242424;
+}
+
+.icon-btn.linkedin {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.icon-btn.linkedin:hover {
+  background-color: #005582;
+}
+
+.icon-btn.discord {
+  background-color: #5865f2; /* Discord Blue */
+}
+
+.icon-btn.discord:hover {
+  background-color: #4752c4;
 }
