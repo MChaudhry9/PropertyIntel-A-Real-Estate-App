@@ -68,7 +68,7 @@ const Navbar = () => {
       ) : (
         <>
           <Link to="/login">Login</Link>
-          <Link to="/register">Try it for Free!</Link>
+          <Link to="/">Try it for Free!</Link>
         </>
       )}
     </nav>
