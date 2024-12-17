@@ -38,7 +38,7 @@ const Login = () => {
     if (error) {
       setError(error.message); // Display error message
     } else {
-      navigate('/'); // Redirect to the home page after login
+      navigate('/Home'); // Redirect to the home page after login
     }
   }
 

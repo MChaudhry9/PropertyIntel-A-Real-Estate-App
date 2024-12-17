@@ -33,10 +33,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/Home" className="home-link">PropertyIntel</Link>
+      {user ?
+        <Link to="/Home" className="home-link">PropertyIntel</Link>
+      :
+        <Link to="/login" className="home-link">PropertyIntel</Link>
+      }
       {user && <Link to="/profile">Profile</Link>}
       <Link to="/contact">Contact</Link>
-      {/* Link to complaint codes file */}
       <a 
         href="/complaint_codes.pdf" 
         target="_blank" 
@@ -46,7 +49,6 @@ const Navbar = () => {
         Complaint Codes
       </a>
 
-      {/* Link to disposition codes file */}
       <a 
         href="/disposition_codes.pdf" 
         target="_blank" 
@@ -56,11 +58,10 @@ const Navbar = () => {
         Disposition Codes 
       </a>
 
-      {/* Conditional rendering: Login/Signup or Sign Out */}
       {user ? (
         <span 
           onClick={handleSignOut} 
-          className="navbar-link" /* Added class to match link styling */
+          className="navbar-link"
           style={{ cursor: 'pointer' }}
         >
           Sign Out
