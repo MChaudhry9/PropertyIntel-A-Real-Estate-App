@@ -8,6 +8,7 @@ const Profile = () => {
   // const [userEmail, setUserEmail] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userId, setUserId] = useState("");
+  // const [userName, setUserName] = useState("");
   
   useEffect(() => {
     const getUser = async () => {
@@ -21,6 +22,7 @@ const Profile = () => {
         if (user) {
           setUserEmail(user.email);
           setUserId(user.id);
+          // user.email === ('jtrived000@citymail.cuny.edu' || 'trivedi.jay2002@gmail.com') ? setUserName("Jay Trivedi") : setUserName("Chao Hong")
         }
       } catch (err) {
         console.error("Error fetching user data:", err.message);
@@ -32,13 +34,13 @@ const Profile = () => {
 
   return (
     <div className="full-screen-container">
-      <div className="inside-container" style={{alignItems: 'center'}}>
-        <h2 style={{fontSize: '30px', textAlign: 'center'}}>My Profile</h2>
+      <div className="inside-container-prof" style={{alignItems: 'center'}}>
+        <h2 style={{fontSize: '30px', textAlign: 'center'}}>My Profile</h2> 
         <div className="profile-container">
           <div className="profile-container-info">
-            <h2>Name: Jay Trivedi</h2>
-            <h2>Account Num: {userId}</h2>
+            {/* <h2>Name: {userName}</h2> */}
             <h2>Email: {userEmail}</h2>
+            <h2>Account Num: {userId}</h2>
           </div>
           <div className="profile-container-qr">
             <img src={QrCodeImgUrl} style={{width: '150px'}} alt="QR Code"/> 

@@ -75,7 +75,7 @@ const Login = () => {
         </h2>
 
         {/* Login Form */}
-        <form className="loginForm" onSubmit={handleSubmit}>
+        <form className="loginForm" onSubmit={handleSubmit} style={{marginTop: '10px'}}>
           <div className="inputGroup">
             <div className="formGroup">
               <label htmlFor="email">Username/Email</label>

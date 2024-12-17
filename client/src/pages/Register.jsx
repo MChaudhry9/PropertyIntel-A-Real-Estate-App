@@ -7,9 +7,9 @@ const Register = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
-    name: '',
+    // name: '',
     // phone: '',
-    // password: '',
+    password: '',
     confirmpassword: ''
   });
   const [error, setError] = useState('');
@@ -37,15 +37,19 @@ const Register = () => {
     // Supabase registration
     const { data, error } = await supabase.auth.signUp({
       email: formData.email,
-      password: formData.password,
+      password: formData.password
+      // name: formData.name,
+      // phone: formData.phone
     });
 
     if (error) {
       setError(error.message);
     } else {
       setSuccess("Registration successful! Check your email to confirm your account.");
-      setFormData({ email: '', password: '', confirmpassword: '' }); // Clear form
+      // setFormData({ email: '', name: '', phone: '', password: '', confirmpassword: '' });
+      setFormData({ email: '', password: '', confirmpassword: '' });
     }
+
   }
 
   function handleLoginClick() {
@@ -82,6 +86,30 @@ const Register = () => {
                 required
               />
             </div>
+            {/* <div className="formGroup">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder='Name'
+                name="name"
+                value={formData.name}
+                onChange={handleFormChange}
+                required
+              />
+            </div>
+            <div className="formGroup">
+              <label htmlFor="phone">Phone Number</label>
+              <input
+                type="text"
+                id="phone"
+                placeholder='Phone No.'
+                name="phone"
+                value={formData.phone}
+                onChange={handleFormChange}
+                required
+              />
+            </div> */}
             <div className="formGroup">
               <label htmlFor="password">Password</label>
               <input

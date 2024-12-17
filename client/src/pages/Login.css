@@ -29,7 +29,7 @@
 .inputGroup {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Spacing between form groups */
+  /* gap: 15px; */
 }
 
 .formGroup {
