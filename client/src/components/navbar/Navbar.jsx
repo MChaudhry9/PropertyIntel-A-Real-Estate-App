@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="home-link">Home</Link>
+      <Link to="/" className="home-link">PropertyIntel</Link>
       {user && <Link to="/profile">Profile</Link>}
       <Link to="/contact">Contact</Link>
       {/* Link to complaint codes file */}
