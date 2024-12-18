@@ -39,7 +39,9 @@
 
   <p align="center">
 -->
-<h1 align="center">PropertyIntel: Your Go-To Real Estate Insights Tool</h3>
+<h1 align="center">PropertyIntel: Uncover Hidden Real Estate Insights</h1>
+
+
 
 
 
