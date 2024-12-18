@@ -15,7 +15,10 @@ const Map = ({ address }) => {
     useEffect(() => {
         if (address) {
             const geocoder = new window.google.maps.Geocoder();
-            geocoder.geocode({ address }, (results, status) => {
+            // Append "New York" to ensure city and state are always New York
+            const addressWithNY = `${address}, New York`;
+
+            geocoder.geocode({ address: addressWithNY }, (results, status) => {
                 if (status === "OK" && results[0]) {
                     const location = results[0].geometry.location;
                     setCoordinates({ lat: location.lat(), lng: location.lng() });
