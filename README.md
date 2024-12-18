@@ -35,11 +35,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">NYC Building Violations App</h3>
+<h3 align="center">PropertyIntel: Your Go-To Real Estate Insights Tool</h3>
 
   <p align="center">
 -->
-<h1 align="center">NYC Building Violations App</h3>
+<h1 align="center">PropertyIntel: Your Go-To Real Estate Insights Tool</h3>
+
 
 
   <!--  
@@ -55,11 +56,11 @@
   </p>
 </div>
 -->
-<!--
+
 <div align="center">
-<a href="">Open the App</a>
+<a href="https://real-estate-complaints.vercel.app/" target="_blank" rel="noopener noreferrer">View Live Demo</a>
 </div>
--->
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -97,7 +98,7 @@
 <!--
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 -->
-The NYC Building Violations App is an innovative web platform that empowers users to explore and analyze building violations across New York City. It integrates a RESTful API built using real-time data from the NYC Department of Buildings (DOB), sourced from the [NYC Open Data](https://opendata.cityofnewyork.us/) platform. The app features an interactive, map-based interface powered by the Google Maps API, that helps uncover property issues such as code violations and unresolved maintenance problems.  
+PropertyIntel is an innovative web app platform that empowers users to explore and analyze building violations across New York City. It integrates a RESTful API built using real-time data from the NYC Department of Buildings (DOB), sourced from the [NYC Open Data](https://opendata.cityofnewyork.us/) platform. The app features an interactive, map-based interface powered by the Google Maps API. This web app sets us apart from other real estate platforms because we help uncover property issues such as code violations and unresolved maintenance problems that other mainstream real estate platforms like Zillow and StreetEasy do not provide.  
 
 This tool is designed to provide actionable insights for real estate professionals, property buyers, investors, homebuyers, and the general public by:  
 
@@ -131,7 +132,6 @@ This tool is designed to provide actionable insights for real estate professiona
 * [![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
 * [![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [![CSS](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 * [![Google Maps API](https://img.shields.io/badge/Google_Maps_API-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)](https://developers.google.com/maps)
 
 
@@ -150,18 +150,18 @@ Follow the steps below to set up and run the project locally.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Key at <a href="https://mapsplatform.google.com/?utm_source=google&utm_medium=cpc&utm_campaign=google_maps_brand_us_2&gad_source=1&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LITbKNA3IdbLeO6gESqh880KDQw6_kmadOmbmLMxyABL8eLl4ptaDxoC8eoQAvD_BwE&gclsrc=aw.ds">Google Maps API 
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
+   git clone https://github.com/MChaudhry9/PropertyIntel-A-Real-Estate-App.git
+
 3. Install NPM packages in your terminal
    ```sh
    npm install
    ```
 4. Enter your API in `config.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   client folder = 'ENTER YOUR API';
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
@@ -213,16 +213,17 @@ Follow the steps below to set up and run the project locally.
 
 ## Top contributors:
 
-- Chao Hong
 - Mamuna Chaudhry
+- Chao Hong
 - Jay Trivedi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- LICENSE -->
-### License
+<!-- ### License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+-->
