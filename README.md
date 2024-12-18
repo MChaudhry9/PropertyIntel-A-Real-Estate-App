@@ -87,7 +87,6 @@
     <li><a href="#how-it-works">How it Works</a></li>
     <li><a href="#api-endpoints-and-query-parameters">API Endpoints and Query Parameters</a></li>
     <li><a href="#top-contributors">Top Contributors</a></li>
-    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -95,9 +94,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<!--
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
--->
+![App-Landing-Page-screenshot](https://github.com/MChaudhry9/Real-Estate-App/blob/main/src/assets/realestateLandingPage.png)
+
 PropertyIntel is an innovative web app platform that empowers users to explore and analyze building violations across New York City. It integrates a RESTful API built using real-time data from the NYC Department of Buildings (DOB), sourced from the [NYC Open Data](https://opendata.cityofnewyork.us/) platform. The app features an interactive, map-based interface powered by the Google Maps API. This web app sets us apart from other real estate platforms because we help uncover property issues such as code violations and unresolved maintenance problems that other mainstream real estate platforms like Zillow and StreetEasy do not provide.  
 
 This tool is designed to provide actionable insights for real estate professionals, property buyers, investors, homebuyers, and the general public by:  
@@ -159,10 +157,12 @@ Follow the steps below to set up and run the project locally.
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   client folder = 'ENTER YOUR API';
-   ```
+4. Enter your Google Maps API key in `client/src/components/Map/Map.jsx`:
+
+   ```jsx
+   bootstrapURLKeys={{ key: 'YOUR_API_KEY' }}
+
+  
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
