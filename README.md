@@ -164,8 +164,12 @@ Follow the steps below to set up and run the project locally.
    ```jsx
    bootstrapURLKeys={{ key: 'YOUR_API_KEY' }}
 
-  
-5. Change git remote url to avoid accidental pushes to base project
+5. Run the Development Server
+   ```sh
+   cd client
+   npm start
+   ```
+6. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
